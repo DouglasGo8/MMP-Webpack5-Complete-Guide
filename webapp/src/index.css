@@ -1,5 +1,10 @@
 html,
 body {
-  margin: 0 auto 0 auto;
+  height: 100%;
+  width: 100%;
   background-image: url("../src/assets/keep_running.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

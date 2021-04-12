@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --port 8080 --config webpack.config.js",
-    "build": "webpack --config webpack.config.prod.js --mode=production"
+    "clean": "rimraf dist",
+    "start": "npm run clean && webpack serve --config webpack.config.js",
+    "build": "npm run clean && webpack --config webpack.config.prod.js"
   },
   "keywords": [],
   "author": "",
@@ -36,6 +37,7 @@
     "imagemin-gifsicle": "^7.0.0",
     "mini-css-extract-plugin": "^1.4.0",
     "react-hot-loader": "^4.13.0",
+    "rimraf": "^3.0.2",
     "sass": "^1.32.8",
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
